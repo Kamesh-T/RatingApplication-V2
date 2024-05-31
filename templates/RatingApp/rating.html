@@ -1,0 +1,15 @@
+<html>
+    {% extends 'RatingApp/base.html' %}
+    {% block content %}
+    {%load static %}
+    <div class="rating">
+        <h1>Rate Us!!</h1>
+        <form method="POST">
+            {% csrf_token %}
+            {{data.as_p}}
+            <center><input type="submit" value="Submit!!" class="btn"></center>
+        </form>
+    </div>
+    <a href="#" id="up-arr"><img src="{% static 'img/up_arr.png' %}" alt="up arrow"></a>
+    {% endblock %}
+</html>

@@ -1,0 +1,104 @@
+<html>
+    {% extends 'RatingApp/base.html' %}
+    {% block content %}
+        <div class="result">
+            <center><h1>Rating Results Set-1</h1></center>
+        <table>
+                <thead>
+                    <th>Name</th>
+                    <th>01</th>
+                    <th>02</th>
+                    <th>03</th>
+                    <th>04</th>
+                    <th>05</th>
+                    <th>06</th>
+                    <th>07</th>
+                    <th>08</th>
+                    <th>09</th>
+                    <th>10</th>
+                    <th>11</th>
+                    <th>12</th>
+                    <th>13</th>
+                    <th>14</th>
+                    <th>15</th>
+                    <th>16</th>
+                    <th>17</th>
+                    <th>18</th>
+                    <th>19</th>
+                    <th>20</th>
+                    <th>21</th>
+            </thead>
+        
+            {% for i in data_1 %}
+                <tr>
+                    <td>{{i.Name}}</td>
+                    <td>{{i.No_1}}</td>
+                    <td>{{i.No_2}}</td>
+                    <td>{{i.No_3}}</td>
+                    <td>{{i.No_4}}</td>
+                    <td>{{i.No_5}}</td>
+                    <td>{{i.No_6}}</td>
+                    <td>{{i.No_7}}</td>
+                    <td>{{i.No_8}}</td>
+                    <td>{{i.No_9}}</td>
+                    <td>{{i.No_10}}</td>
+                    <td>{{i.No_11}}</td>
+                    <td>{{i.No_12}}</td>
+                    <td>{{i.No_13}}</td>
+                    <td>{{i.No_14}}</td>
+                    <td>{{i.No_15}}</td>
+                    <td>{{i.No_16}}</td>
+                    <td>{{i.No_17}}</td>
+                    <td>{{i.No_18}}</td>
+                    <td>{{i.No_19}}</td>
+                    <td>{{i.No_20}}</td>
+                    <td>{{i.No_21}}</td>
+                </tr>
+            {% endfor %}            
+            </table>
+            
+            <center><h1>Rating Results Set-2</h1></center>
+            <table>
+            <thead>
+                <th>Name</th>
+                <th>01</th>
+                <th>02</th>
+                <th>03</th>
+                <th>04</th>
+                <th>05</th>
+                <th>06</th>
+                <th>07</th>
+                <th>08</th>
+                <th>09</th>
+                <th>10</th>
+                <th>11</th>
+                <th>12</th>
+                <th>13</th>
+                <th>14</th>
+        </thead>
+    
+        {% for i in data_2 %}
+            <tr>
+                <td>{{i.Name}}</td>
+                <td>{{i.No_1}}</td>
+                <td>{{i.No_2}}</td>
+                <td>{{i.No_3}}</td>
+                <td>{{i.No_4}}</td>
+                <td>{{i.No_5}}</td>
+                <td>{{i.No_6}}</td>
+                <td>{{i.No_7}}</td>
+                <td>{{i.No_8}}</td>
+                <td>{{i.No_9}}</td>
+                <td>{{i.No_10}}</td>
+                <td>{{i.No_11}}</td>
+                <td>{{i.No_12}}</td>
+                <td>{{i.No_13}}</td>
+                <td>{{i.No_14}}</td>
+            </tr>
+        {% endfor %}            
+    </table>
+    <p style="text-align: center;">NOTE:To view the page properly,you can use Desktop.Ignore if you use Desktop </p>
+    </div>
+       
+    {% endblock %}
+</html>
